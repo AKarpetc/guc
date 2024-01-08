@@ -15,7 +15,7 @@ find_package(MaterialX REQUIRED HINTS ${pxr_DIR})
 
 # We need to open PNG and JPEG files in order to read the number of channels
 # for shading node creation. OIIO should be provided by the USD installation.
-find_package(OpenImageIO REQUIRED HINTS ${pxr_DIR})
+find_package(OpenImageIO REQUIRED)
 
 option(GUC_BUILD_EXECUTABLE "Build the guc executable." ON)
 option(GUC_BUILD_USDGLTF "Build the Sdf file format plugin." OFF)
